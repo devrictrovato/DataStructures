@@ -30,7 +30,7 @@ public class Tables implements TableCellRenderer {
 		// Gerando cada modelo para a devida tabela
 		insertModel = createModelTable(new String[] { "Entrada", "Saida" });
 		removeModel = createModelTable(new String[] { "Entrada", "Saida" });
-		viewModel = createModelTable(new String[] { Menu.texts[option].substring(4, Menu.texts[option].length()) });
+		viewModel = createModelTable(new String[] { Menu.texts[option] });
 
 		// Instanciando as tabelas com base no modelo
 		insertTable = new JTable(insertModel);

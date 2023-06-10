@@ -1,4 +1,4 @@
-package com.types.tads;
+package com.types.structures;
 
 import java.util.Comparator;
 
@@ -31,7 +31,6 @@ public class AVLTreeMap<K, V> extends BinarySearchTree<K, V> implements Map<K, V
 		} // construtor padrão
 
 		// Construtor preferido
-		@SuppressWarnings("unchecked")
 		AVLNode(Entry<K, V> element, BTPosition<Entry<K, V>> parent, BTPosition<Entry<K, V>> left,
 				BTPosition<Entry<K, V>> right) {
 			super(element, parent, left, right);
@@ -58,13 +57,11 @@ public class AVLTreeMap<K, V> extends BinarySearchTree<K, V> implements Map<K, V
 	}
 
 	// Retorna a altura de um nodo
-	@SuppressWarnings("unchecked")
 	protected int height(Position<Entry<K, V>> p) {
 		return ((AVLNode<K, V>) p).getHeight();
 	}
 
 	// Define a altura de um nodo interno
-	@SuppressWarnings("unchecked")
 	protected void setHeight(Position<Entry<K, V>> p) {
 		((AVLNode<K, V>) p).setHeight(1 + Math.max(height(left(p)), height(right(p))));
 	}

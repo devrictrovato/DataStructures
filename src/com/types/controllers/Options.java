@@ -30,51 +30,51 @@ public class Options implements ActionListener {
 		String option = (String)((JComponent) e.getSource()).getName();
 		
 		switch (option) {
-			case "TAD-Lista Arranjo": 
+			case "Arranjo": 
 				disableMenu();
 				Main.mainFrame.add(new ArrayIndexListPanel()); 
 				break;
-			case "TAD-Pilha": 
+			case "Pilha": 
 				disableMenu(); 
 				Main.mainFrame.add(new ArrayStackPanel()); 
 				break;
-			case "TAD-Fila": 
+			case "Fila": 
 				disableMenu(); 
 				Main.mainFrame.add(new ArrayQueuePanel()); 
 				break;
-			case "TAD-Lista de Nodos": 
+			case "Lista de Nodos": 
 				disableMenu(); 
 				Main.mainFrame.add(new NodePositionListPanel()); 
 				break;
-			case "TAD-Árvore Genérica": 
+			case "Árvore Genérica": 
 				disableMenu(); 
 				Main.mainFrame.add(new LinkedTreePanel()); 
 				break;
-			case "TAD-Árvore Binária": 
+			case "Árvore Binária": 
 				disableMenu(); 
 				Main.mainFrame.add(new LinkedBinaryTreePanel()); 
 				break;
-			case "TAD-Fila de Prioridade": 
+			case "Fila de Prioridade": 
 				disableMenu(); 
 				Main.mainFrame.add(new SortedListPriorityQueuePanel()); 
 				break;
-			case "TAD-Mapa": 
+			case "Mapa": 
 				disableMenu(); 
 				Main.mainFrame.add(new HashTableMapPanel()); 
 				break;
-			case "TAD-Dicionário": 
+			case "Dicionário": 
 				disableMenu(); 
 				Main.mainFrame.add(new HashTableMultiMapPanel()); 
 				break;
-			case "TAD-Mapa Ordenado - ABB": 
+			case "Mapa Ordenado (ABB)": 
 				disableMenu(); 
 				Main.mainFrame.add(new BinarySearchTreePanel()); 
 				break;
-			case "TAD-Mapa Ordenado - AVL": 
+			case "Mapa Ordenado (AVL)": 
 				disableMenu(); 
 				Main.mainFrame.add(new AVLTreeMapPanel()); 
 				break;
-			case "TAD-Grafos": 
+			case "Grafos": 
 				disableMenu(); 
 				Main.mainFrame.add(new GraphPanel()); 
 				break;

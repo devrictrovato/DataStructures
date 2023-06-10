@@ -1,7 +1,7 @@
-package com.types.tads;
+package com.types.structures;
 
 // Esta classe implementa a interface do TAD Dicionario MultiMap<K, V>
-// As outras interfaces utilizadas são do próprio Java.
+// As outras interfaces utilizadas sï¿½o do prï¿½prio Java.
 import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -19,17 +19,17 @@ public class HashTableMultiMap<K, V> implements MultiMap<K, V> {
 		nSize = 0;
 	}
 
-	// Retorna a quantidade de entradas no dicionário
+	// Retorna a quantidade de entradas no dicionï¿½rio
 	public int size() {
 		return nSize;
 	}
 	
-	// Retorna se o dicionário está vazio
+	// Retorna se o dicionï¿½rio estï¿½ vazio
 	public boolean isEmpty() {
 		return nSize == 0;
 	}
 
-	// Insere um item em um dicionário. Retorna uma entrada recentemente criada
+	// Insere um item em um dicionï¿½rio. Retorna uma entrada recentemente criada
 	public Map.Entry<K, V> put(K key, V value) throws IllegalArgumentException {
 		LinkedList<Map.Entry<K, V>> ll;
 		if (key == null)
@@ -44,18 +44,18 @@ public class HashTableMultiMap<K, V> implements MultiMap<K, V> {
 		return e;
 	}
 
-	// Retorna uma entrada contendo uma dada chave ou null se não existe a entrada
+	// Retorna uma entrada contendo uma dada chave ou null se nï¿½o existe a entrada
 	public Map.Entry<K, V> get(K key) throws IllegalArgumentException {
 		LinkedList<Map.Entry<K, V>> ll;
 		if (key == null)
 			throw new IllegalArgumentException();
 		if ((ll = m.get(key)) == null)
 			return null; // nada aqui ainda
-		return ll.peekFirst(); // o primeiro elemento é tão bom como qualquer um
+		return ll.peekFirst(); // o primeiro elemento ï¿½ tï¿½o bom como qualquer um
 	}
 
 	// Retorna um iterador contendo todas as entradas contendo uma certa chave ou um iterador
-	// vazio se a entrada não existir.
+	// vazio se a entrada nï¿½o existir.
 	public Iterable<Map.Entry<K, V>> getAll(K key) throws IllegalArgumentException {
 		LinkedList<Map.Entry<K, V>> ll;
 		if (key == null)
@@ -65,7 +65,7 @@ public class HashTableMultiMap<K, V> implements MultiMap<K, V> {
 		return ll;
 	}
 
-	// Remove e retorna uma dada entrada do dicionário.
+	// Remove e retorna uma dada entrada do dicionï¿½rio.
 	public Map.Entry<K, V> remove(Map.Entry<K, V> e) throws IllegalArgumentException {
 		LinkedList<Map.Entry<K, V>> ll;
 		if (e == null)
@@ -73,21 +73,21 @@ public class HashTableMultiMap<K, V> implements MultiMap<K, V> {
 		K key = e.getKey();
 		ll = m.get(key);
 		if (ll == null)
-			throw new IllegalArgumentException(); // chave não está em m
+			throw new IllegalArgumentException(); // chave nï¿½o estï¿½ em m
 		if (ll.remove(e)) {
 			nSize--;
 			if (ll.isEmpty())
 				m.remove(key); // neste caso, remove a lista vazia
-			return e; // e estava em ll, então retorna a entrada removida
+			return e; // e estava em ll, entï¿½o retorna a entrada removida
 		} else
-			throw new IllegalArgumentException(); // e não estava em ll
+			throw new IllegalArgumentException(); // e nï¿½o estava em ll
 	}
 	
 	public Iterable<K> dictKeys() {
 		return m.keySet();
 	}
 
-	// Retorna um iterador contendo todas as entradas do dicionário.
+	// Retorna um iterador contendo todas as entradas do dicionï¿½rio.
 	public Iterable<Map.Entry<K, V>> entrySet() {
 		LinkedList<Map.Entry<K, V>> ll = new LinkedList<Map.Entry<K, V>>();
 		// todas as entradas desta lista para ll	

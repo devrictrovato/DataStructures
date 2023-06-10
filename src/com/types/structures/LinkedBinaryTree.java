@@ -1,4 +1,4 @@
-package com.types.tads;
+package com.types.structures;
 
 import java.util.Iterator;
 

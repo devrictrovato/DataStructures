@@ -14,8 +14,8 @@ import com.types.nodes.TreeNode;
 import com.types.panels.Entry;
 import com.types.panels.StandartPanel;
 import com.types.panels.UserEntries;
-import com.types.tads.LinkedTree;
-import com.types.tads.NodePositionList;
+import com.types.structures.LinkedTree;
+import com.types.structures.NodePositionList;
 import com.types.util.Descriptions;
 import com.types.util.Tables;
 

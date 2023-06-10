@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import com.types.panels.Entry;
 import com.types.panels.StandartPanel;
 import com.types.panels.UserEntries;
-import com.types.tads.AVLTreeMap;
+import com.types.structures.AVLTreeMap;
 import com.types.util.Descriptions;
 import com.types.util.Tables;
 

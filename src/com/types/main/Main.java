@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.HeadlessException;
 import java.awt.Toolkit;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -49,6 +48,6 @@ public class Main extends JFrame implements IRender {
 
 	// Rodando a janela
 	public static void main(String[] args) {
-		mainFrame = new Main("Tipos Abstratos de Dados");
+		mainFrame = new Main("Estrutura de dados");
 	}
 }

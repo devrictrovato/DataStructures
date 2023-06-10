@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 import com.types.panels.Entry;
 import com.types.panels.StandartPanel;
 import com.types.panels.UserEntries;
-import com.types.tads.ArrayQueue;
+import com.types.structures.ArrayQueue;
 import com.types.util.Descriptions;
 import com.types.util.Tables;
 

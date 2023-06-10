@@ -1,4 +1,4 @@
-package com.types.tads;
+package com.types.structures;
 
 import com.types.exceptions.EmptyQueueException;
 import com.types.exceptions.FullQueueException;

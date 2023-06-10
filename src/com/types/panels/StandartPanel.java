@@ -156,7 +156,7 @@ public abstract class StandartPanel extends JPanel implements IRender {
 
 	// Inicializando janela
 	public void init() {
-		setBackground(new Color(245, 239, 240));
+		setBackground(new Color(52, 123, 152));
 		setLayout(new GridBagLayout());
 		setVisible(true);
 	}

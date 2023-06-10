@@ -6,8 +6,10 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+
 import com.types.controllers.Options;
 import com.types.design.Styles;
 import com.types.interfaces.IRender;
@@ -25,18 +27,18 @@ public class Menu extends ImagePanel implements IRender {
 	
 	// Texto das opções
 	public static final String[] texts = {
-		"TAD-Lista Arranjo",
-		"TAD-Pilha",
-		"TAD-Fila",
-		"TAD-Lista de Nodos",
-		"TAD-Árvore Genérica",
-		"TAD-Árvore Binária",
-		"TAD-Fila de Prioridade",
-		"TAD-Mapa",
-		"TAD-Dicionário",
-		"TAD-Mapa Ordenado - ABB",
-		"TAD-Mapa Ordenado - AVL",
-		"TAD-Grafos"
+		"Arranjo",
+		"Pilha",
+		"Fila",
+		"Lista de Nodos",
+		"Árvore Genérica",
+		"Árvore Binária",
+		"Fila de Prioridade",
+		"Mapa",
+		"Dicionário",
+		"Mapa Ordenado (ABB)",
+		"Mapa Ordenado (AVL)",
+		"Grafos"
 	};
 	
 	// Construtor
@@ -61,11 +63,12 @@ public class Menu extends ImagePanel implements IRender {
 	
 	// Titulo do menu
 	private void createTitle() {
-		JLabel title = new JLabel("Tipos Abstratos de Dados");
+		JLabel title = new JLabel("Estrutura de Dados");
 		int fontSize = (Main.SIZE.width - Main.SIZE.height) / 10;
 		title.setFont(new Font("Arial", Font.BOLD, fontSize));
 		title.setForeground(Styles.colorThemeLight);
-		layout.setConstraints(0, 0, 2, 1, 
+		title.setBorder(BorderFactory.createEmptyBorder(3, 0, 0, 0));
+		layout.setConstraints(0, 0, 2, 1,
 				GridBagConstraints.CENTER, GridBagConstraints.VERTICAL);
 		layout.insets = new Insets(0, 0, 5 * texts.length, 0);
 		add(title, layout);

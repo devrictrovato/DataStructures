@@ -12,7 +12,7 @@ import com.types.interfaces.Position;
 import com.types.panels.Entry;
 import com.types.panels.StandartPanel;
 import com.types.panels.UserEntries;
-import com.types.tads.NodePositionList;
+import com.types.structures.NodePositionList;
 import com.types.util.Descriptions;
 import com.types.util.Tables;
 

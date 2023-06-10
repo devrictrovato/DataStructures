@@ -33,11 +33,11 @@ public final class Styles {
 	}
 
 	// Cores TEMA - fundo
-	public static Color colorTheme = new Color(81, 0, 148);
-	public static Color colorThemeDark = new Color(59, 0, 107);
-	public static Color colorThemeTooDark = new Color(38, 0, 69);
-	public static Color colorThemeLight = new Color(115, 0, 209);
-	public static Color colorThemeTooLight = new Color(221, 179, 255);
+	public static Color colorTheme = new Color(35, 106, 185);
+	public static Color colorThemeDark = new Color(19, 56, 99);
+	public static Color colorThemeTooDark = new Color(9, 29, 52);
+	public static Color colorThemeLight = new Color(96, 156, 225);
+	public static Color colorThemeTooLight = new Color(225, 236, 249);
 	
 	// Cores TEMA - texto
 	public static Color colorThemeTextLight = new Color(221, 179, 255);
@@ -64,8 +64,8 @@ public final class Styles {
 	// Estilo dos botões
 	public static void setStyleButton(JButton button) {
 		button.setFont(new Font("Arial", Font.BOLD, Main.SIZE.height / 50)); // fonte
-		button.setBackground(new Color(91, 94, 166)); // cor do botão
-		button.setForeground(new Color(255, 255, 255)); // cor do texto
+		button.setBackground(colorThemeLight); // cor do botão
+		button.setForeground(colorThemeTooLight); // cor do texto
 	}
 
 	// Estilo dos botões laterais

@@ -1,4 +1,4 @@
-package com.types.tads;
+package com.types.structures;
 
 import com.types.exceptions.EmptyStackException;
 import com.types.exceptions.FullStackException;
