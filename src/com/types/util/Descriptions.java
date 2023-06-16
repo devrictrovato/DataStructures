@@ -2,9 +2,6 @@ package com.types.util;
 
 import java.awt.Color;
 import java.awt.GridBagConstraints;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -26,7 +23,7 @@ public final class Descriptions {
 	public static void descriptionArrayList(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Lista Arranjo</h1>\r\n" + 
+						"    <h1>Arranjo</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -134,18 +131,13 @@ public final class Descriptions {
 						"</section>",
 						panel
 				);
-//		try {
-//			setDescription(renderHtml("res\\templates\\arraylist.html"), panel);
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		}
 	}
 
 	// Descrição do painel Pilha
 	public static void descriptionStack(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Pilha</h1>\r\n" + 
+						"    <h1>Pilha</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -218,7 +210,7 @@ public final class Descriptions {
 	public static void descriptionQueue(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Fila</h1>\r\n" + 
+						"    <h1>Fila</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -291,7 +283,7 @@ public final class Descriptions {
 	public static void descriptionNodePositionList(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Lista de Nodos</h1>\r\n" + 
+						"    <h1>Lista de Nodos</h1>\r\n" + 
 						"</section>" + 
 						"<section>\r\n" + 
 						"    <h2>Definição</h2>\r\n" + 
@@ -423,7 +415,7 @@ public final class Descriptions {
 	public static void descriptionGenericTree(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Árvore Genérica</h1>\r\n" + 
+						"    <h1>Árvore Genérica</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -543,7 +535,7 @@ public final class Descriptions {
 	public static void descriptionBinaryTree(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Árvore Binária</h1>\r\n" + 
+						"    <h1>Árvore Binária</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -666,7 +658,7 @@ public final class Descriptions {
 	public static void descriptionPriorityQueue(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Fila de Prioridade</h1>\r\n" + 
+						"    <h1>Fila de Prioridade</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -755,7 +747,7 @@ public final class Descriptions {
 	public static void descriptionMap(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Mapa</h1>\r\n" + 
+						"    <h1>Mapa</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -856,7 +848,7 @@ public final class Descriptions {
 	public static void descriptionDictionary(JPanel panel) {
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Dicionário</h1>\r\n" + 
+						"    <h1>Dicionário</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -942,9 +934,12 @@ public final class Descriptions {
 
 	// Descrição do painel Mapa ABB
 	public static void descriptionABB(JPanel panel) {
+		String putabbimg = panel.getClass().getClassLoader().getResource("putabb.jpg").toString();
+		String remabb1 = panel.getClass().getClassLoader().getResource("remabb1.jpg").toString();
+		String remabb2 = panel.getClass().getClassLoader().getResource("remabb2.jpg").toString();
 		setDescription(
 				"<section>\r\n" + 
-						"    <h1>TAD - Mapa Ordenado - Árvore Binária de Busca</h1>\r\n" + 
+						"    <h1>Mapa Ordenado - Árvore Binária de Busca</h1>\r\n" + 
 						"</section>\r\n" + 
 						"\r\n" + 
 						"<section>\r\n" + 
@@ -954,26 +949,325 @@ public final class Descriptions {
 						"        que são: get(k), put(k, v) e remove(k).\r\n" + 
 						"    </p>\r\n" + 
 						"    <p>\r\n" + 
-						"        Seu mecanismo de busca envolve os antecessores e os sucessores da chave.\r\n" + 
+						"        Seu mecanismo de busca envolve os antecessores e os sucessores da chave\r\n" + 
+						"        desempenhando de acordo a uma busca sequencial e sua importância permanece\r\n" + 
+						"        com uma relação de ordem em suas chaves\r\n" + 
 						"    </p>\r\n" + 
-						"</section>", 
+						"    <p>\r\n" + 
+						"        Sua <b>pesquisa</b> consiste em algoritmos de busca adaptados para melhor execução\r\n" +
+						"        mais conhecidos como: <b>preorder</b>, <b>inorder</b>, <b>posorder</b>.\r\n" +
+						"    </p>\r\n" + 
+						"</section>\r\n" +
+						"<section>\r\n" +
+						"    <table>\r\n" + 
+						"        <tr class=\"header\">\r\n" + 
+						"            <th>Operação</th>\r\n" + 
+						"            <th>Função</th>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>size()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna o número de entradas contidas na arvore de busca.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>isEmpty()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna <b>true</b> se a arvore de busca estiver vazio ou <b>false</b> se não estiver.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>get(k)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Pesquisa por uma entrada que tenha a chave igual a <b>k</b>, caso encontre, retorna o valor contido\r\n" + 
+						"                    na entrada, caso não encontre, retorna <b>null</b>.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>put(k, v)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"					 <img src='"+ putabbimg +"'>\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>remove(k)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"					 <p><img src='"+ remabb1 +"'></p>\r\n" +
+						"					 <p><img src='"+ remabb2 +"'></p>\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>keySet(k)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    retorna uma coleção iterável contendo todas as chaves armazenadas no mapa. Assim,\r\n" + 
+						"                    keySet().iterator() retorna um iterator das chaves.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>values()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    retorna uma coleção contendo todos os valores associados com as chaves armazenadas no mapa. Assim,\r\n" + 
+						"                    values().iterator() retorna um iterator dos valores.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>entrySets()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    retorna uma coleção contendo todas as entradas (chave-valor) do mapa. Assim, entrySet().iterator()\r\n" + 
+						"                    retorna um iterator das entradas.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"    </table>\r\n" + 
+						"</section>\r\n"
+						, 
 						panel
 				);
 	}
 
 	// Descrição do painel Mapa AVL
 	public static void descriptionAVL(JPanel panel) {
+		String putavlimg = panel.getClass().getClassLoader().getResource("putavl.jpg").toString();
+		String remavlimg = panel.getClass().getClassLoader().getResource("remavl.jpg").toString();
 		setDescription(
-				"<style> h1 { text-align: center; } </style><h1>TAD - Mapa Ordenado - AVL</h1>", 
-				panel
+				"<section>\r\n" + 
+						"    <h1>Mapa Ordenado - AVL</h1>\r\n" + 
+						"</section>\r\n" + 
+						"\r\n" + 
+						"<section>\r\n" + 
+						"    <h2>Definição</h2>\r\n" + 
+						"    <p>\r\n" + 
+						"        Esta arvore é uma <strong>TAD Arvore Binaria</strong>\r\n" + 
+						"        criada para evitar problemas de inserção de chaves dependendo de suas insersoes.\r\n" + 
+						"    </p>\r\n" + 
+						"    <p>\r\n" + 
+						"        Essa correção assume uma regra, onde ela devera manter sua altura <b>balanceada</b>\r\n" + 
+						"        obtendo uma reestruturacao e mantendo a ordem das chaves proposto por\r\n" + 
+						"        <b>Adel'son - Vel'skii - Landis (AVL)</b>.\r\n" + 
+						"    </p>\r\n" + 
+						"</section>\r\n" +
+						"<section>\r\n" +
+						"    <table>\r\n" + 
+						"        <tr class=\"header\">\r\n" + 
+						"            <th>Operação</th>\r\n" + 
+						"            <th>Função</th>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>size()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna o número de entradas contidas na arvore de busca.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>isEmpty()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna <b>true</b> se a arvore de busca estiver vazio ou <b>false</b> se não estiver.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>get(k)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Pesquisa por uma entrada que tenha a chave igual a <b>k</b>, caso encontre, retorna o valor contido\r\n" + 
+						"                    na entrada, caso não encontre, retorna <b>null</b>.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>put(k, v)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"					 <img src='"+ putavlimg +"'>\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>remove(k)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"					 <p><img src='"+ remavlimg +"'></p>\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>isBalanced()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna se um nodo tem o fator de balanceamento entre -1 e 1.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>rebalance(pos)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Chamado para inserir e remover. Percorre de <b>pos</b> até a raiz.\r\n" + 
+						"                    Para cada nodo encontrado, recomputamos a sua <b>altura</b> e\r\n" + 
+						"                    executamos a reestruturação trinode se desbalanceado.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"    </table>\r\n" + 
+						"</section>\r\n"
+						,
+						panel
 				);
 	}
 
 	// Descrição do painel Grafos
 	public static void descriptionGraph(JPanel panel) {
 		setDescription(
-				"<style> h1 { text-align: center; } </style><h1>TAD - Grafo</h1>", 
-				panel
+				"<section>\r\n" + 
+						"    <h1>Grafos</h1>\r\n" + 
+						"</section>\r\n" + 
+						"\r\n" + 
+						"<section>\r\n" + 
+						"    <h2>Definição</h2>\r\n" + 
+						"    <p>\r\n" + 
+						"        São discutidas três alternativas conhecidas, geralmente referidas como\r\n" +
+						"		 estrutura de <b>lista de arestas, estrutura de lista de adjacência e matriz de\r\n" +
+						"		 adjacência</b>.\r\n" + 
+						"    </p>\r\n" + 
+						"    <p>\r\n" + 
+						"        Nas três representações, usa-se uma coleção para armazenar os vértices do grafo.\r\n" +
+						"    </p>\r\n" + 
+						"    <p>\r\n" + 
+						" 		 A estrutura de <b>lista de arestas e a estrutura de lista de adjacência</b>\r\n" +
+						"		 armazenam apenas as arestas realmente presentes no grafo, enquanto a\r\n" +
+						"		 <b>matriz de adjacência</b> armazena uma posição para cada par de vértices (se\r\n" +
+						"		 houver uma aresta entre eles ou não).\r\n" +
+						"    </p>\r\n" + 
+						"    <p>\r\n" + 
+						" 		 Essa diferença faz com que a representação de <b>listas de arestas ou listas\r\n" +
+						"		 de adjacências</b> use menos espaço de memória do que a representação de\r\n" +
+						"		 <b>matriz de adjacência</b>.\r\n" +
+						"    </p>\r\n" + 
+						"</section>\r\n" +
+						"<section>\r\n" +
+						"    <table>\r\n" + 
+						"        <tr class=\"header\">\r\n" + 
+						"            <th>Operação</th>\r\n" + 
+						"            <th>Função</th>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>vertices()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna uma coleção iterável de todos os vértices do grafo.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>edges()</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna uma coleção iterável de todas as arestas do grafo.\r\n" + 
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>incidentEdges(v)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna uma coleção das arestas incidentes sob o nodo <b>v</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>opposite(v, e)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna o nodo final da aresta <b>e</b> oposto ao nodo <b>v</b>; um erro ocorre se <b>e</b> não é incidente a <b>v</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>endVertices(e)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Retorna um arranjo armazenando os vértices finais da aresta <b>e</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>areAdjacent(v, w)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Testa se os vértices <b>v</b> e <b>w</b> são adjacentes.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>replace(v, x)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Substitui o elemento armazenado no nodo <b>v</b> com <b>x</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>replace(e, x)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Substitui o elemento armazenado na aresta <b>e</b> com <b>x</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>insertVertex(x)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Insere e retorna um novo nodo armazenando o elemento <b>x</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>insertEdge(v, w, x)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Insere e retorna uma nova aresta não dirigida (<b>v</b>, <b>w</b>) e armazena o elemento <b>x</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"forte\">\r\n" + 
+						"            <td>removeVertex(v)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Remove o vértice <b>v</b> e todas as arestas incidentes e retorna o elemento armazenado em <b>v</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"        <tr class=\"fraco\">\r\n" + 
+						"            <td>removeEdge(e)</td>\r\n" + 
+						"            <td>\r\n" + 
+						"                <p>\r\n" + 
+						"                    Remove a aresta <b>e</b> e retorna o elemento armazenado em <b>e</b>.\r\n" +
+						"                </p>\r\n" + 
+						"            </td>\r\n" + 
+						"        </tr>\r\n" + 
+						"    </table>\r\n" + 
+						"</section>\r\n"
+						,
+						panel
 				);
 	}
 
@@ -998,11 +1292,7 @@ public final class Descriptions {
 						"    <br>\r\n" + 
 						"    <section id=\"authors\">\r\n" + 
 						"        <h2>Equipe:</h2>\r\n" + 
-						"        <p>- Gabriel de Melo Marcondes (RA: 1903416)</p>\r\n" + 
-						"        <p>- Raphael Vinícius Oliveira da Silva (RA: 1902604)</p>\r\n" + 
-						"        <p>- Geisa Pereira Souza (RA: 1903417)</p>\r\n" + 
-						"        <p>- Willian Donha dos Santos Pestana (RA: 1902650)</p>\r\n" + 
-						"        <p>- Ricardo de Oliveira Trovato (RA: 1903223)</p>\r\n" + 
+						"        <p>- Ricardo de Oliveira Trovato</p>\r\n" + 
 						"    </section>\r\n" +
 						"", 
 						panel
@@ -1025,7 +1315,7 @@ public final class Descriptions {
 				"}\r\n" + 
 				"\r\n" + 
 				"body {\r\n" + 
-				"    background-color: #f4e6ff;\r\n" + 
+				"    background-color: #E4F1F6;\r\n" + 
 				"}\r\n" + 
 				"\r\n" + 
 				"h1 {\r\n" + 
@@ -1068,38 +1358,24 @@ public final class Descriptions {
 				"}\r\n" + 
 				"\r\n" + 
 				".header th {\r\n" + 
-				"    background-color: #3b006b;\r\n" + 
+				"    background-color: #092834;\r\n" +
+				"    color: #67AFCB;\r\n" + 
 				"}\r\n" + 
 				"\r\n" + 
 				".forte td {\r\n" + 
-				"    background-color: #c680ff;\r\n" + 
+				"    background-color: #1A3E4C;\r\n" +
+				"    color: #67AFCB;\r\n" + 
 				"}\r\n" + 
 				"\r\n" + 
 				".fraco td {\r\n" + 
-				"    background-color: #ddb3ff;\r\n" + 
+				"    background-color: #347B98;\r\n" + 
+				"    color: #67AFCB;\r\n" + 
 				"}</style>" + content);
 
 		JScrollPane scroll = new JScrollPane(desc);
 		scroll.setBorder(null);
 		scroll.setPreferredSize(desc.getPreferredSize());
 		panel.add(scroll, layout);
-	}
-
-	// Renderização de arquivos html
-	private static String renderHtml(String path) throws FileNotFoundException {
-		StringBuilder html = new StringBuilder();
-		FileReader fr = new FileReader(path);
-		try {
-			BufferedReader br = new BufferedReader(fr);
-			String val;
-			while ((val = br.readLine()) != null) {
-				html.append(val);
-			}
-			String result = html.toString();
-			br.close();
-			return result;
-		}
-		catch (Exception ex) { return ""; }
 	}
 
 }
