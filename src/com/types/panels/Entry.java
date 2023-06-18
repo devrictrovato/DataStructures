@@ -15,9 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.types.design.Styles;
 import com.types.interfaces.IRender;
-import com.types.main.Layout;
 import com.types.main.Main;
 
 public class Entry extends JFrame implements IRender {
@@ -49,7 +47,7 @@ public class Entry extends JFrame implements IRender {
 
 	// Inicializando janela
 	public void init() {
-		setPreferredSize(new Dimension(Main.SIZE.width / 3, Main.SIZE.height / 3));
+		setPreferredSize(new Dimension(Main.SIZE.width / 2, Main.SIZE.height / 2));
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setUndecorated(true);
 		getContentPane().setBackground(new Color(0, 155, 119));
@@ -96,6 +94,7 @@ public class Entry extends JFrame implements IRender {
 		layout.gridx = 0;
 		Styles.setStyleButton(cancel);
 		panel.add(cancel, layout);
+		
 		layout.gridx = 1;
 		Styles.setStyleButton(send);
 		panel.add(send, layout);
@@ -107,13 +106,13 @@ public class Entry extends JFrame implements IRender {
 	protected void buttonEvents() {
 		cancel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { 
-				StandartPanel.buttonStatus(true); 
+				Standard.buttonStatus(true); 
 				dispose(); 
 			} 
 		});
 		send.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				StandartPanel.buttonStatus(true);
+				Standard.buttonStatus(true);
 				for (JComponent comp : components) {
 					if (comp instanceof JTextField) ((JTextField) comp).setText("");
 				}

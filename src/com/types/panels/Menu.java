@@ -10,11 +10,9 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-import com.types.controllers.Options;
-import com.types.design.Styles;
 import com.types.interfaces.IRender;
-import com.types.main.Layout;
 import com.types.main.Main;
+import com.types.main.Options;
 import com.types.util.ImagePanel;
 
 public class Menu extends ImagePanel implements IRender {

@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.HeadlessException;
 import java.awt.Toolkit;
+
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -18,8 +20,10 @@ public class Main extends JFrame implements IRender {
 	// Tamanho da janela
 	public static Dimension SIZE = Toolkit.getDefaultToolkit().getScreenSize();
 	
+	// Compone
 	public static JFrame mainFrame;
 	public static JPanel menu;
+	private ImageIcon icon = new ImageIcon("res/dsicon.png");
 
 	// Construtor
 	public Main(String title) throws HeadlessException {
@@ -36,6 +40,7 @@ public class Main extends JFrame implements IRender {
 	// Inicializando janela
 	public void init() {
 		setPreferredSize(SIZE);
+		setIconImage(icon.getImage());
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 		setUndecorated(true);

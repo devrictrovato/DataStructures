@@ -7,8 +7,8 @@ import javax.swing.JTextArea;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 
-import com.types.design.Styles;
 import com.types.panels.Menu;
+import com.types.panels.Styles;
 
 /* 
  * Classe responsável por mostrar os TADs em funcionamento

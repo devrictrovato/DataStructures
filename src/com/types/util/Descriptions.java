@@ -6,7 +6,8 @@ import java.awt.GridBagConstraints;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
-import com.types.main.Layout;
+
+import com.types.panels.Layout;
 
 /*
  * Montar as explicações dos TADs e os demais paineis
@@ -1007,29 +1008,10 @@ public final class Descriptions {
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
 						"        <tr class=\"fraco\">\r\n" + 
-						"            <td>keySet(k)</td>\r\n" + 
+						"            <td>search(k, p)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    retorna uma coleção iterável contendo todas as chaves armazenadas no mapa. Assim,\r\n" + 
-						"                    keySet().iterator() retorna um iterator das chaves.\r\n" + 
-						"                </p>\r\n" + 
-						"            </td>\r\n" + 
-						"        </tr>\r\n" + 
-						"        <tr class=\"forte\">\r\n" + 
-						"            <td>values()</td>\r\n" + 
-						"            <td>\r\n" + 
-						"                <p>\r\n" + 
-						"                    retorna uma coleção contendo todos os valores associados com as chaves armazenadas no mapa. Assim,\r\n" + 
-						"                    values().iterator() retorna um iterator dos valores.\r\n" + 
-						"                </p>\r\n" + 
-						"            </td>\r\n" + 
-						"        </tr>\r\n" + 
-						"        <tr class=\"fraco\">\r\n" + 
-						"            <td>entrySets()</td>\r\n" + 
-						"            <td>\r\n" + 
-						"                <p>\r\n" + 
-						"                    retorna uma coleção contendo todas as entradas (chave-valor) do mapa. Assim, entrySet().iterator()\r\n" + 
-						"                    retorna um iterator das entradas.\r\n" + 
+						"                    Pesquisa a chave <b>k</b> na arvore ate encontrar a posição <b>p</b>.\r\n" +
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -1117,10 +1099,10 @@ public final class Descriptions {
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
 						"        <tr class=\"forte\">\r\n" + 
-						"            <td>rebalance(pos)</td>\r\n" + 
+						"            <td>rebalance(p)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Chamado para inserir e remover. Percorre de <b>pos</b> até a raiz.\r\n" + 
+						"                    Chamado para inserir e remover. Percorre de <b>p</b> até a raiz.\r\n" + 
 						"                    Para cada nodo encontrado, recomputamos a sua <b>altura</b> e\r\n" + 
 						"                    executamos a reestruturação trinode se desbalanceado.\r\n" + 
 						"                </p>\r\n" + 
@@ -1289,10 +1271,20 @@ public final class Descriptions {
 						"        mais comuns e demonstrar algumas de suas operações básicas como:\r\n" + 
 						"        <strong>Inserção, Remoção e Visualização.</strong>\r\n" + 
 						"    </p>\r\n" + 
+						"    <p>O projeto foi criado para adaptação criativa e especifica,\r\n" + 
+						"        todas as estruturas podem ser melhoradas e reestruturadas para outros objetivos,\r\n" + 
+						"        para mais detalhes de cada <b>TAD</b> encontre em: <b>com.types.structures</b>.\r\n" + 
+						"    </p>\r\n" + 
+						"    <p>A parte gráfica dessa aplicação foi construida baseada em uma\r\n" + 
+						"        <b>Design Pattern</b> chamada <b>Builder</b> que consister em modularizar\r\n" + 
+						"        classes do código em pedaços para junta-los posteriormente na classe principal\r\n" + 
+						"    </p>\r\n" + 
 						"    <br>\r\n" + 
 						"    <section id=\"authors\">\r\n" + 
-						"        <h2>Equipe:</h2>\r\n" + 
-						"        <p>- Ricardo de Oliveira Trovato</p>\r\n" + 
+						"        <p>Autor: Ricardo de Oliveira Trovato</p>\r\n" + 
+						"		 <p>Mais detalhes: https://github.com/devrictrovato/DataStructures </p>\r\n" +
+						"		 <p>Portifolio: https://github.com/devrictrovato </p>\r\n" +
+						"		 <p>Linkedin: https://www.linkedin.com/in/ricardo-de-oliveira-trovato/ </p>\r\n" +
 						"    </section>\r\n" +
 						"", 
 						panel
