@@ -1,3 +1,3 @@
 # Estrutura de dados
 
-"Em Construção"
+Diversas estruturas de dados representadas na linguagem Java
