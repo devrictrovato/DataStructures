@@ -771,7 +771,7 @@ public final class Descriptions {
 						"            <td>size()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Retorna o número de entradas contidas no mapa.\r\n" + 
+						"                    Retorna o número de entradas de <b>M</b>;\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -779,7 +779,7 @@ public final class Descriptions {
 						"            <td>isEmpty()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Retorna <b>true</b> se o mapa estiver vazio ou <b>false</b> se não estiver.\r\n" + 
+						"                    Testa se <b>M</b> está vazio;\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -787,8 +787,8 @@ public final class Descriptions {
 						"            <td>get(k)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Pesquisa por uma entrada que tenha a chave igual a <b>k</b>, caso encontre, retorna o valor contido\r\n" + 
-						"                    na entrada, caso não encontre, retorna <b>null</b>.\r\n" + 
+						"                    Se <b>M</b> contém uma entrada <b>e</b> com chave igual a <b>k</b>, então retorna o valor de <b>e</b>, senão" + 
+						"                    retorna <b>null</b>.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -796,10 +796,9 @@ public final class Descriptions {
 						"            <td>put(k, v)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Sabendo que em mapas não podem haver chaves repetidas, uma entrada é adicionada com o valor <b>v</b>\r\n" + 
-						"                    e retorna <b>null</b> se não existir uma chave igual a <b>k</b> no mapa. Mas se existir, a entrada\r\n" + 
-						"                    existente que contem a chave <b>k</b> terá seu valor substituído por <b>v</b> e retorna o valor que\r\n" + 
-						"                    estava antes.\r\n" + 
+						"                    Se <b>M</b> não tem uma entrada com chave igual a <b>k</b>, então adiciona a entrada (<b>k</b>,<b>v</b>) em" + 
+						"                    <b>M</b> e retorna <b>null</b>; senão, substitui o valor existente com <b>v</b> com chave <b>k</b> e retorna o" + 
+						"                    valor antigo;\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -807,8 +806,8 @@ public final class Descriptions {
 						"            <td>remove(k)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Remove e retorna o valor contido na entrada com chave igual a <b>k</b>. Se não existir uma entrada\r\n" + 
-						"                    com chave igual a <b>k</b>, retorna <b>null</b>.\r\n" + 
+						"                    Remove a entrada de <b>M</b> com chave igual a <b>k</b>, e retorna seu valor; se <b>M</b> não possui a" + 
+						"                    entrada com chave <b>k</b>, então retorna <b>null</b>;\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -816,8 +815,8 @@ public final class Descriptions {
 						"            <td>keySet(k)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    retorna uma coleção iterável contendo todas as chaves armazenadas no mapa. Assim,\r\n" + 
-						"                    keySet().iterator() retorna um iterator das chaves.\r\n" + 
+						"                    retorna uma coleção iterável contendo todas as chaves armazenadas em <b>M</b> (assim" + 
+						"                    keySet ().iterator() retorna um iterator das chaves);\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -825,8 +824,8 @@ public final class Descriptions {
 						"            <td>values()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    retorna uma coleção contendo todos os valores associados com as chaves armazenadas no mapa. Assim,\r\n" + 
-						"                    values().iterator() retorna um iterator dos valores.\r\n" + 
+						"                    retorna uma coleção contendo todos os valores associados com as chaves\r\n" + 
+						"                    armazenadas em <b>M</b> (assim values( ).iterator() retorna um iterator dos valores);\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -834,8 +833,8 @@ public final class Descriptions {
 						"            <td>entrySets()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    retorna uma coleção contendo todas as entradas (chave-valor) do mapa. Assim, entrySet().iterator()\r\n" + 
-						"                    retorna um iterator das entradas.\r\n" + 
+						"                    retorna uma coleção contendo todas as entradas (chave-valor) de <b>M</b> (assim\r\n" + 
+						"                    entrySet( ).iterator() retorna um iterator das entradas).\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -871,7 +870,7 @@ public final class Descriptions {
 						"            <td>size()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Retorna o número de entradas contidas no dicionário.\r\n" + 
+						"                    Retorna o número de elementos de <b>D</b>.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -879,7 +878,7 @@ public final class Descriptions {
 						"            <td>isEmpty()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Retorna <b>true</b> se o dicionário estiver vazio ou <b>false</b> se não estiver.\r\n" + 
+						"                    Testa se <b>D</b> está vazio.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -887,9 +886,8 @@ public final class Descriptions {
 						"            <td>get(k)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Caso encontre uma entrada com a chave igual a <b>k</b>, retorna a entrada, caso não encontre,\r\n" + 
-						"                    retorna <b>null</b>. Se acontecer de ter mais de uma entrada com a mesma chave, retorna a primera\r\n" + 
-						"                    ocorrência.\r\n" + 
+						"                    Se <b>D</b> contém um elemento com chave igual a <b>k</b>, então retorna o elemento,\r\n"
+						+ "senão retorna null.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -897,7 +895,8 @@ public final class Descriptions {
 						"            <td>getAll(k)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Retorna uma coleção iteravel com todas as entradas que tem <b>k</b> como chave.\r\n" + 
+						"                    Retorna uma coleção iterável contendo todos os elementos com chave igual a\r\n"
+						+ "<b>k</b>.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -905,8 +904,8 @@ public final class Descriptions {
 						"            <td>put(k, v)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Adiciona uma entrada com chave <b>k</b> e valor <b>v</b>, após isso, a entrada adicionada é\r\n" + 
-						"                    retornada.\r\n" + 
+						"                    Insere um elemento com chave <b>k</b> e valor <b>v</b> no dicionário <b>D</b>, retornando o\r\n"
+						+ "elemento criado.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -914,8 +913,8 @@ public final class Descriptions {
 						"            <td>remove(e)</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Caso encontre uma entrada <b>e</b>, ela será removida e retornada, caso contrário retorna\r\n" + 
-						"                    <b>null</b>.\r\n" + 
+						"                    Remove de <b>D</b> um elemento <b>e</b>, retornando o elemento removido, senão\r\n"
+						+ "retorna <b>null</b>.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 
@@ -923,7 +922,7 @@ public final class Descriptions {
 						"            <td>entrySet()</td>\r\n" + 
 						"            <td>\r\n" + 
 						"                <p>\r\n" + 
-						"                    Retorna uma coleção iterável com todas as entradas.\r\n" + 
+						"                    Retorna uma coleção iterável dos elementos chave-valor de <b>D</b>.\r\n" + 
 						"                </p>\r\n" + 
 						"            </td>\r\n" + 
 						"        </tr>\r\n" + 

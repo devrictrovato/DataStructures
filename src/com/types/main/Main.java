@@ -20,7 +20,7 @@ public class Main extends JFrame implements IRender {
 	// Tamanho da janela
 	public static Dimension SIZE = Toolkit.getDefaultToolkit().getScreenSize();
 	
-	// Compone
+	// Componentes
 	public static JFrame mainFrame;
 	public static JPanel menu;
 	private ImageIcon icon = new ImageIcon("res/dsicon.png");
@@ -31,7 +31,7 @@ public class Main extends JFrame implements IRender {
 		init();
 	}
 	
-	// Renderiza��o padr�o
+	// Renderizador
 	public void renderComponents() {
 		menu = new Menu("gif_frame.gif");
 		add(menu);
@@ -41,6 +41,7 @@ public class Main extends JFrame implements IRender {
 	public void init() {
 		setPreferredSize(SIZE);
 		setIconImage(icon.getImage());
+		setTitle("Estrutura de Dados - Java");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 		setUndecorated(true);
@@ -51,7 +52,7 @@ public class Main extends JFrame implements IRender {
 		setVisible(true);
 	}
 
-	// Rodando a janela
+	// Executar a janela
 	public static void main(String[] args) {
 		mainFrame = new Main("Estrutura de dados");
 	}
