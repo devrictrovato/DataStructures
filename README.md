@@ -2,6 +2,8 @@
 
 Este repositório contém implementações de diversas estruturas de dados comumente usadas em programação. As estruturas de dados são implementadas em Java e são fornecidas como referência para estudantes e desenvolvedores interessados em aprender sobre como organizar e gerenciar informações a partir de suas operações.
 
+![DataStructures](https://github.com/devrictrovato/DataStructures/assets/66500781/22e05efa-26c0-4ae0-a001-223f51b0eb50)
+
 ## Implementações
 * Lista Simplesmente Encadeada (Singly Linked List)
 * Lista Duplamente Encadeada (Doubly Linked List)
