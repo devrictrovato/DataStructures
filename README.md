@@ -30,7 +30,7 @@ git clone https://github.com/devrictrovato/DataStructures.git
 cd DataStructures/src
 ```
 
-3. Cada estrutura de dados é implementada em um arquivo Java separado e possui uma classe principal para demonstrar o uso das operações. Compile e execute o arquivo Java desejado para ver a estrutura em ação. Por exemplo, para executar a interface demonstrativa encontro o Main.java e execute:
+3. Cada estrutura de dados é implementada em um arquivo Java separado. Compile e execute o arquivo abaixo para ver as estruturas em ação. Execute a interface demonstrativa encontrando o Main.java e execute:
 
 ```bash
 javac Main.java
@@ -43,9 +43,9 @@ Contribuições são bem-vindas! Se você encontrar algum problema ou tiver uma 
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](https://github.com/devrictrovato/DataStructures/blob/master/LICENSE) para obter mais detalhes.
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](https://github.com/devrictrovato/Estruturas-De-Dados/blob/master/LICENSE) para obter mais detalhes.
 
-## Agradecimentos
+## Mais Informações
 
 Este repositório foi inspirado pela importância das estruturas de dados no desenvolvimento de software e pela necessidade de ter uma referência de implementações simples em Java para estudo e uso em projetos pessoais.
 
