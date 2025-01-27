@@ -16,27 +16,6 @@ Este repositório contém implementações de diversas estruturas de dados comum
 * Heap (Binary Heap)
 * Grafo (Graph)
 
-## Como usar?
-
-1. Clone este repositório em seu ambiente local:
-
-```bash
-git clone https://github.com/devrictrovato/DataStructures.git
-```
-
-2. Navegue até o diretório `src` para encontrar as implementações das estruturas de dados:
-
-```bash
-cd DataStructures/src
-```
-
-3. Cada estrutura de dados é implementada em um arquivo Java separado. Compile e execute o arquivo abaixo para ver as estruturas em ação. Execute a interface demonstrativa encontrando o Main.java e execute:
-
-```bash
-javac Main.java
-java Main
-```
-
 ## Contribuindo
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver uma melhoria para sugerir, sinta-se à vontade para abrir uma issue ou enviar um pull request. Certifique-se de seguir as diretrizes de contribuição do projeto.
@@ -48,5 +27,3 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](h
 ## Mais Informações
 
 Este repositório foi inspirado pela importância das estruturas de dados no desenvolvimento de software e pela necessidade de ter uma referência de implementações simples em Java para estudo e uso em projetos pessoais.
-
-Se você tiver alguma dúvida, sugestão ou contribuição, sinta-se à vontade para entrar em contato ou colaborar com o projeto!
